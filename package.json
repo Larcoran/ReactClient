@@ -1,0 +1,46 @@
+{
+  "name": "nauka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run webpack -- -w & nodemon --ignore src/ --ignore dist/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "abortcontroller-polyfill": "^1.3.0",
+    "is-reachable": "^3.1.0",
+    "react": "^16.8.6",
+    "react-detect-offline": "^2.4.0",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-server-status": "^1.1.1",
+    "style-loader": "^0.23.1",
+    "styled-components": "^4.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "whatwg-fetch-timeout": "^2.0.2-timeout"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-merge": "^4.2.1"
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: Helvetica;
+  font-size: 26px;
+  font-weight: 300;
+}
+* {
+    box-sizing: border-box
+}
